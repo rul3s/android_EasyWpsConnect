@@ -16,5 +16,59 @@
         android:text="Easy Wps Connect"
         android:id="@+id/main_tvTitle"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="80px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BSSID:"
+        android:id="@+id/main_tvBSSID"
+        android:layout_below="@+id/main_tvTitle"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_etBSSID"
+        android:layout_below="@+id/main_tvBSSID"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WPS PIN"
+        android:id="@+id/main_tvWPSPIN"
+        android:layout_below="@+id/main_etBSSID"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_etWPSPIN"
+        android:layout_below="@+id/main_tvWPSPIN"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        android:id="@+id/main_btConnect"
+        android:layout_below="@+id/main_etWPSPIN"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DEBUG:"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_btConnect"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
